@@ -1,0 +1,141 @@
+[
+  {
+    "name": "Drehmaschine1",
+    "description": "",
+    "groupId": 1,
+    "capablePartNumbers": [
+      "10001",
+      "10002",
+      "10003"
+    ],
+    "id": 1
+  },
+  {
+    "name": "Drehmaschine2",
+    "description": "",
+    "groupId": 1,
+    "capablePartNumbers": [
+      "10004",
+      "10002",
+      "10005"
+    ],
+    "id": 2
+  },
+  {
+    "name": "Drehmaschine3",
+    "description": "",
+    "groupId": 1,
+    "capablePartNumbers": [
+      "10006",
+      "10005"
+    ],
+    "id": 3
+  },
+  {
+    "name": "Kopfbearbeitung1",
+    "description": "",
+    "groupId": 2,
+    "capablePartNumbers": [
+      "10002",
+      "10001",
+      "10003",
+      "10004",
+      "10005",
+      "10006"
+    ],
+    "id": 4
+  },
+  {
+    "name": "Kopfbearbeitung2",
+    "description": "",
+    "groupId": 2,
+    "capablePartNumbers": [
+      "10002",
+      "10005"
+    ],
+    "id": 5
+  },
+  {
+    "name": "Schleifen1",
+    "description": "",
+    "groupId": 3,
+    "capablePartNumbers": [
+      "10001",
+      "10002",
+      "10003",
+      "10004"
+    ],
+    "id": 6
+  },
+  {
+    "name": "Schleifen2",
+    "description": "",
+    "groupId": 3,
+    "capablePartNumbers": [
+      "10003",
+      "10004",
+      "10005",
+      "10006"
+    ],
+    "id": 7
+  },
+  {
+    "name": "Richten1",
+    "description": "",
+    "groupId": 4,
+    "capablePartNumbers": [
+      "10001",
+      "10002",
+      "10003"
+    ],
+    "id": 8
+  },
+  {
+    "name": "Richten2",
+    "description": "",
+    "groupId": 4,
+    "capablePartNumbers": [
+      "10002",
+      "10003",
+      "10004"
+    ],
+    "id": 9
+  },
+  {
+    "name": "Richten3",
+    "description": "",
+    "groupId": 4,
+    "capablePartNumbers": [
+      "10003",
+      "10004",
+      "10005",
+      "10006"
+    ],
+    "id": 10
+  },
+  {
+    "name": "Strahlen1",
+    "description": "",
+    "groupId": 5,
+    "capablePartNumbers": [
+      "10001",
+      "10002",
+      "10003",
+      "10004",
+      "10005",
+      "10006"
+    ],
+    "id": 11
+  },
+  {
+    "name": "Strahlen2",
+    "description": "",
+    "groupId": 5,
+    "capablePartNumbers": [
+      "10004",
+      "10005",
+      "10006"
+    ],
+    "id": 12
+  }
+]

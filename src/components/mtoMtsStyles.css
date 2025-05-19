@@ -1,0 +1,100 @@
+/* Erweiterte CSS-Stile für die Unterscheidung zwischen MTO und MTS im Gantt-Chart */
+
+/* MTS-Aufträge (grünlich) */
+.make-to-stock {
+  background-color: #93c5fd;
+  border: 1px solid #60a5fa;
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.15);
+}
+
+.make-to-stock:hover {
+  background-color: #bfdbfe;
+}
+
+/* MTO-Aufträge (rötlich) */
+.make-to-order {
+  background-color: #fca5a5;
+  border: 1px solid #f87171;
+  box-shadow: 0 2px 4px rgba(239, 68, 68, 0.15);
+  /* Gestreiftes Muster für bessere Unterscheidung */
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 5px,
+    rgba(248, 113, 113, 0.15) 5px,
+    rgba(248, 113, 113, 0.15) 10px
+  );
+}
+
+.make-to-order:hover {
+  background-color: #fecaca;
+}
+
+/* MTO-Indikator innerhalb der Auftragsleiste */
+.mto-indicator {
+  display: inline-block;
+  background-color: #ef4444;
+  color: white;
+  font-size: 0.6rem;
+  font-weight: bold;
+  padding: 0 3px;
+  margin-left: 4px;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+/* Verbesserte Stile für verspätete Aufträge */
+.late {
+  border: 2px solid #ef4444 !important;
+  position: relative;
+}
+
+.late::after {
+  content: "⚠️";
+  position: absolute;
+  right: 4px;
+  top: 3px;
+  font-size: 10px;
+}
+
+/* Farben für die Legende */
+.legend-make-to-stock {
+  background-color: #93c5fd;
+  background-image: none;
+}
+
+.legend-make-to-order {
+  background-color: #fca5a5;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 5px,
+    rgba(248, 113, 113, 0.15) 5px,
+    rgba(248, 113, 113, 0.15) 10px
+  );
+}
+
+/* Verbesserungen für die Bottleneck-Visualisierung */
+.bottleneck-machine .gantt-row-header {
+  background-color: #fed7aa;
+  border-left: 2px solid #fb923c;
+  font-weight: 600;
+  position: relative;
+}
+
+.bottleneck-machine .gantt-row-header::before {
+  content: "⚙️";
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Verbesserung für aufeinanderfolgende Aufträge des gleichen Typs */
+[data-order-type="Make to Order"] + [data-order-type="Make to Order"].sequential-task {
+  border-left-color: #f87171;
+}
+
+[data-order-type="Make to Stock"] + [data-order-type="Make to Stock"].sequential-task {
+  border-left-color: #60a5fa;
+}

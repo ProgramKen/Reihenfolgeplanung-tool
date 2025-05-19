@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Drehmaschine",
+    "description": "",
+    "id": 1
+  },
+  {
+    "name": "Kopfbearbeitung",
+    "description": "",
+    "id": 2
+  },
+  {
+    "name": "Schleifen",
+    "description": "",
+    "id": 3
+  },
+  {
+    "name": "Richten",
+    "description": "",
+    "id": 4
+  },
+  {
+    "name": "Strahlen",
+    "description": "",
+    "id": 5
+  }
+]

@@ -1,0 +1,65 @@
+/* 
+   Dieses Stylesheet enthält Verbesserungen für die Darstellung verbundener Gantt-Balken
+   Es wird im ImprovedGanttChart.tsx importiert, um eine konsistente Darstellung zu gewährleisten
+*/
+
+/* Verbesserungen für zusammenhängende Gantt-Balken */
+.gantt-row {
+  position: relative;
+}
+
+/* Verbesserte Darstellung der sequentiellen Aufträge auf einer Maschine */
+.gantt-timeline {
+  position: relative;
+}
+
+/* Diese Klasse markiert sequentielle Aufträge im selben Arbeitsgang */
+.sequential-task {
+  clip-path: none !important;
+  margin-left: -1px !important; /* Reduziert für bessere Präzision */
+}
+
+/* Bessere Positionierung für überlappende Balken */
+.gantt-bar[data-sequential="true"] {
+  margin-left: -1px !important; /* Reduziert für bessere Präzision */
+  border-left: none !important;
+  border-radius: 0 !important;
+  /* Erhalt der vertikalen Zentrierung */
+  transform: translateY(-50%) !important; 
+}
+
+/* Entferne jegliche Nebeneffekte, die Lücken erzeugen könnten */
+.gantt-bar {
+  box-sizing: border-box;
+  transform-origin: center !important;
+  top: 50% !important; /* Vertikale Zentrierung */
+  transform: translateY(-50%) !important; /* Garantierte Zentrierung */
+}
+
+/* Korrektur für Zeilen, um die vertikale Ausrichtung zu verbessern */
+.gantt-timeline > * > .gantt-bar {
+  top: 50% !important; /* Überschreibe alle möglichen top-Werte */
+  transform: translateY(-50%) !important; /* Garantiere die Zentrierung */
+}
+
+/* Spezielle Behandlung für zusammenhängende Aufträge gleichen Typs */
+.make-to-stock + .make-to-stock.sequential-task,
+.make-to-order + .make-to-order.sequential-task {
+  border-left: none !important;
+}
+
+/* Bessere Hover-Effekte für verbundene Balken */
+.gantt-row:hover .gantt-bar {
+  opacity: 0.95;
+}
+
+/* Spezieller Stil für den ersten und letzten Balken in einer Reihe */
+.gantt-bar:first-child {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.gantt-bar:last-child {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}

@@ -1,0 +1,60 @@
+[
+  {
+    "partNumber": "10001",
+    "sequence": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "partNumber": "10002",
+    "sequence": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "partNumber": "10003",
+    "sequence": [
+      1,
+      2,
+      4,
+      5
+    ]
+  },
+  {
+    "partNumber": "10004",
+    "sequence": [
+      1,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "partNumber": "10005",
+    "sequence": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "partNumber": "10006",
+    "sequence": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  }
+]
